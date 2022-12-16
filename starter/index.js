@@ -88,14 +88,24 @@ var finances = [
 ];
 
 // The total number of months included in the dataset.
+console.log("Financial Analysis")
+console.log("--------------------------------------")
 const startDate = new Date(2010, 1, 1); // Jan 1st 2010
 const endDate = new Date(2017, 3, 1); // Mar 1st 2017 - is this correct to put end date as the beginning of next month? Or is there an inclusive command?
 
  const monthDiff = endDate.getMonth() - startDate.getMonth() +
  (12 * (endDate.getFullYear() - startDate.getFullYear()));
-console.log(monthDiff); 
+console.log("Total Months: ", monthDiff); 
 
 // The net total amount of Profit/Losses over the entire period.
+var sum=0
+for (var i=0; i <finances.length; i++) {
+    sum+=finances[i][1]
+  }
+console.log("Total:" ,sum)
+
+
+  
 
 // The average of the changes in Profit/Losses over the entire period.
 
