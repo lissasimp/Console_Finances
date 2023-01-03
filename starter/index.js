@@ -108,13 +108,13 @@ console.log("Total: $" + sum)
 // You will need to track what the total change in profits are from month to month and then find the average.
 // (Total/Number of months)
 // Part 1
-//Caluclate the change in profit/loss month to month
 
-let profitChange = []
+
+let profitChange = 0
 for ( let i = 1; i < finances.length; i++) {
-profitChange.push(finances[i]-finances[i-1])
+profitChange += finances[i][1]-finances[i-1][1] //Calculate the change in profit/loss month to month
 }
- console.log(profitChange);
+ console.log(profitChange / finances.length); //find the average
 
 // The greatest increase in profits (date and amount) over the entire period.
 //check the last increase. If it's bigger than 0, keep track of the new biggest one.
