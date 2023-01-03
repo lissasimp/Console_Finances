@@ -101,8 +101,6 @@ for (var i=1; i <finances.length; i++) {
     sum += finances[i][1]
   }
 console.log("Total: $" + sum)
-//is this the correct way to add dollars?
-
 
 
 // The average of the changes in Profit/Losses over the entire period.
@@ -111,11 +109,12 @@ console.log("Total: $" + sum)
 // (Total/Number of months)
 // Part 1
 //Caluclate the change in profit/loss month to month
- let profitChange = []
+
+let profitChange = []
 for ( let i = 1; i < finances.length; i++) {
-  
+profitChange.push(finances[i]-finances[i-1])
 }
- console.log(finances.length);
+ console.log(profitChange);
 
 // The greatest increase in profits (date and amount) over the entire period.
 //check the last increase. If it's bigger than 0, keep track of the new biggest one.
