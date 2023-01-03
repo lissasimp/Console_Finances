@@ -90,10 +90,8 @@ var finances = [
 // The total number of months included in the dataset.
 console.log("Financial Analysis")
 console.log("--------------------------------------")
-
-for (let i = 0; i <finances.length; i++) {  
+ 
   console.log("Total months: " + finances.length);
-};
 
 // The net total amount of Profit/Losses over the entire period.
 var sum = 0
@@ -114,7 +112,7 @@ let profitChange = 0
 for ( let i = 1; i < finances.length; i++) {
 profitChange += finances[i][1]-finances[i-1][1] //Calculate the change in profit/loss month to month
 }
- console.log(profitChange / finances.length); //find the average
+ console.log("Average Change: $" + profitChange / finances.length); //find the average
 
 // The greatest increase in profits (date and amount) over the entire period.
 //check the last increase. If it's bigger than 0, keep track of the new biggest one.
