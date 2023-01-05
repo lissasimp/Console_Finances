@@ -25,7 +25,7 @@ Your task is to write JavaScript code that analyzes the records to calculate eac
 
 ## Usage
 //Insert a screenshot of console
-![alt text](.png)
+![alt text](./assets/Screenshot_Console.PNG)
 
 ## Credits
 The following websites were used to support this project:
