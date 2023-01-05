@@ -26,6 +26,7 @@ Your task is to write JavaScript code that analyzes the records to calculate eac
 ## Usage
 //Insert a screenshot of console
 ![alt text](./assets/Screenshot_Console.PNG)
+https://lissasimp.github.io/Console_Finances/
 
 ## Credits
 The following websites were used to support this project:
